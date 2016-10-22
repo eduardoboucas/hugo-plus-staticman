@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+	<title>{{ .Title}}{{ if not .IsHome }}&middot; {{ .Site.Title }}{{ end }}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+	{{ .Hugo.Generator }}
+
+	{{ "<!-- CSS -->" | safeHTML }}
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css">
+
+	{{ "<!--Favicon-->" | safeHTML }}
+	<link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico" type="image/x-icon">
+
+	{{ "<!-- RSS -->" | safeHTML }}
+	{{ if .RSSlink -}}
+	  	<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+	  	<link href="{{ .RSSlink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+	{{- end }}
+
+	{{ "<!-- Font Awesome -->" | safeHTML }}
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	{{ "<!-- Google Fonts -->" | safeHTML }}
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>

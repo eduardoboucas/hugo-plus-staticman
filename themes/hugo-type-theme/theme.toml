@@ -1,0 +1,18 @@
+name = "Type"
+license = "MIT"
+licenselink = "https://github.com/digitalcraftsman/hugo-type-theme/blob/master/LICENSE.md"
+description = "A free and open-source ~~Jekyll~~ Hugo theme. Great for blogs and easy to customize."
+homepage = "https://github.com/digitalcraftsman/hugo-type-theme"
+tags = ["blog", "disqus", "google analytics", "minimalistic"]
+features = ["", ""]
+min_version = 0.16
+
+[author]
+  name = "Digitalcraftsman"
+  homepage = "https://github.com/digitalcraftsman"
+
+# If porting an existing theme
+[original]
+  name = "Rohan Chandra"
+  homepage = "https://rohanchandra.github.io"
+  repo = "https://github.com/rohanchandra/type-theme"
