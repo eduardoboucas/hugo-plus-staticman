@@ -1,6 +1,7 @@
 comments:
-  allowedOrigins: ['localhost', 'hugo.staticman.net']
-  allowedFields: ['name', 'email', 'body']
+  allowedOrigins: ["localhost", "hugo.staticman.net"]
+  allowedFields: ["name", "email", "body"]
+  branch: "master"
   generatedFields:
     date:
       type: date
@@ -9,6 +10,6 @@ comments:
   name: "Hugo + Staticman"
   path: "data/comments/{options.entryId}"
   filename: "{@id}"
-  requiredFields: ['name', 'body']
+  requiredFields: ["name", "body"]
   transforms:
     email: md5
