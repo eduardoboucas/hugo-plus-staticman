@@ -26,7 +26,7 @@
 
   <h3>Say something</h3>
 
-  <form class="post-new-comment" method="POST" action="https://dev.staticman.net/v2/entry/eduardoboucas/staticman-test/master/comments">
+  <form class="post-new-comment" method="POST" action="https://dev.staticman.net/v2/entry/eduardoboucas/hugo-plus-staticman/master/comments">
   <!--form class="post-new-comment" method="POST" action="http://localhost:8055/v2/entry/eduardoboucas/staticman-test/master/comments"-->
     <input type="hidden" name="options[redirect]" value="{{ .Site.BaseURL }}{{ .URL }}">
     <input type="hidden" name="options[entryId]" value="{{ .UniqueID }}">
@@ -34,5 +34,5 @@
     <input name="fields[email]" type="email" class="post-comment-field" placeholder="Your email address">
     <textarea name="fields[body]" class="post-comment-field" placeholder="Your message. Feel free to use Markdown." rows="10"></textarea>
     <input type="submit" class="post-comment-field post-comment-button" value="Submit">
-  </form>>
+  </form>
 </section>
