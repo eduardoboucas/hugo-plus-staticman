@@ -1,4 +1,4 @@
-baseurl = "https://example.org"
+baseurl = "http://hugo.staticman.net/"
 languageCode = "en-us"
 title = "Hugo + Staticman"
 theme = "hugo-type-theme"
