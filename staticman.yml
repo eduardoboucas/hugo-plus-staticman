@@ -1,0 +1,14 @@
+comments:
+  allowedOrigins: ['localhost', 'hugo.staticman.net']
+  allowedFields: ['name', 'email', 'body']
+  generatedFields:
+    date:
+      type: date
+  format: "json"
+  moderation: true
+  name: "Hugo + Staticman"
+  path: "data/comments/{options.entryId}"
+  filename: "{@id}"
+  requiredFields: ['name', 'body']
+  transforms:
+    email: md5
