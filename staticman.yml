@@ -67,7 +67,8 @@ posts:
       type: date
     slug:
       type: slugify
-      field: title
+      options:
+        field: title
     tags: ["user-generated"]
   format: "frontmatter"
   moderation: true
