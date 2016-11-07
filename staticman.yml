@@ -65,12 +65,15 @@ posts:
   generatedFields:
     date:
       type: date
+    slug:
+      type: slugify
+      field: title
     tags: ["user-generated"]
   format: "frontmatter"
   moderation: true
   name: "Hugo + Staticman"
   path: "content/post"
-  filename: "{@id}"
+  filename: "{fields.slug}"
   requiredFields: ["title", "body"]
   transforms:
     body: "frontmatterContent"
