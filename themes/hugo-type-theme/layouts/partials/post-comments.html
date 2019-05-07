@@ -4,8 +4,7 @@
   {{ $entryId := .UniqueID }}
 
   {{ if isset $.Site.Data.comments $entryId }}
-    {{ $comments := (index $.Site.Data.comments $entryId ) }}
-    {{ range $index, $comments }}
+    {{ range $index, $comments : = (index $.Site.Data.comments $entryId ) }}
       <div class="post-comment">
         <div class="post-comment-header">
           <img class="post-comment-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=100">
