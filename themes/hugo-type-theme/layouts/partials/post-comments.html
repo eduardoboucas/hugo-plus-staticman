@@ -12,9 +12,9 @@
         <div class="post-comment">
           <div class="post-comment-header">
             <img class="post-comment-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=100">
-            <p class="post-comment-info"><strong>{{ .name }}</strong><br>{{ dateFormat "02/01/2006" .date }}</p>
+            <p class="post-comment-info"><strong>{{ .name | htmlEscape }}</strong><br>{{ dateFormat "02/01/2006" .date }}</p>
           </div>
-          {{ .body | markdownify }}
+          {{ .body | htmlEscape | markdownify }}
         </div>
       {{ end }}       
     {{ end }}
