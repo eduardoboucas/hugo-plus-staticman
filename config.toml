@@ -1,4 +1,4 @@
-baseurl = "https://hugo.staticman.net/"
+baseurl = "https://mjabuz.github.io"
 languageCode = "en-us"
 title = "Hugo + Staticman"
 theme = "hugo-type-theme"
